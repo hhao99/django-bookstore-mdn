@@ -1,0 +1,12 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Eric Hao", email = "hhao99@gmail.com"},
+]
+license = {text = "MIT"}
+dependencies = [
+    "django>=4.2.7",
+]
+requires-python = ">=3.12"
