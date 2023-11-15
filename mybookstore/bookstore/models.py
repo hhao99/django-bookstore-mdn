@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.utils.timezone import now
 # Create your models here.
 class Genre(models.Model):
     name = models.CharField(
@@ -21,7 +21,7 @@ class Book(models.Model):
     summary = models.TextField(max_length=1000,help_text='the summary of the book')
     isbn = models.CharField('ISBN', max_length=13, help_text="the book\'s ISBN, <a href='https://www.isbn-international.org/content/what-is-isbn'>what is ISBN</a>")
     genre = models.ManyToManyField(Genre, help_text='book genre')
-    published_at = models.DateField()
+    published_at = models.DateField(default=now())
 
     def __str__(self):
         return self.author + ' - ' + self.title
