@@ -1,0 +1,24 @@
+body {
+    background-color: slategray;
+    margin: 1em;
+}
+
+* {
+    border: 1px;
+    border-color: red;
+}
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.header-section:hover {
+    color:burlywood;
+}
+
+.content-section {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
