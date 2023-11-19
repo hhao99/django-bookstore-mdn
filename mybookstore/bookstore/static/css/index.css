@@ -1,8 +1,9 @@
 body {
     background-color: slategrey;
+    margin: 3rem;
 }
-* {
-    border: 1px solid red;
+*:hover {
+    border: 1px solid steelblue;
 }
 .header {
     display: flex;
