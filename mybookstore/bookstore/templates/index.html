@@ -1,1 +1,6 @@
 <h1>Django BookStore</h1>
+<div>
+    {%for book in books %}
+    <li>{{book.title}}</li>
+    {% endfor %}
+</div>
