@@ -1,6 +1,9 @@
-<h1>Django BookStore</h1>
+{% extends '_base.html' %}
+{% block content %}
 <div>
+    <h3>Book Index</h3>
     {%for book in books %}
     <li>{{book.title}}</li>
     {% endfor %}
 </div>
+{% endblock %}
